@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> MAD'S </title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1> SÉRIES </h1>
+        </header>
+        <div>
+            <form id="formEsquerda">
+                <fieldset>
+                    <legend> Editar </legend>
+                    <p> <input type = 'text' id="seriesId" style="visibility: hidden"> </p>
+                    <p> <input type = 'text' id = 'inputUrl' placeholder="Url da Imagem"> </p>
+                    <p> <input type = 'text' id = 'inputTitle' placeholder="Título"/> </p>
+                    <p> <textarea id = 'inputSynopsis' placeholder="Sinopse"></textarea> </p>
+                    <p> <textarea id = 'inputDirector' placeholder="Direção"></textarea> </p>
+                    <p> <textarea id = 'inputMainCast' placeholder="Elenco"></textarea> </p>
+                    <p> <input type ='text' id = 'inputYear' placeholder="Ano"> </p>
+                    <p> <input type = 'text' id = 'inputSeasons' placeholder="Temporadas"> </p>
+                    <p> <input type = 'text' id = 'inputGenre' placeholder="Gênero"> </p>
+                    <p> <input type = 'text' id = 'inputStreaming' placeholder="Streaming"> </p>
+                    <p> <input type = 'text' id = 'inputRating' placeholder="Rating"> </p>
+                    <p> <textarea id = 'inputAwards' placeholder="Prêmios"></textarea> </p>
+                    <p> <button id = 'inputEditar' onclick = "sendUpdate()"> Enviar </button> </p>
+                </fieldset>
+            </form>
+            <form id="formDireita">
+                <fieldset>
+                    <legend> Criar </legend>
+                    <p> <input type = 'text' style="visibility: hidden"> </p>
+                    <p> <input type = 'text' id = 'inputUrlA' placeholder="Url da Imagem"> </p>
+                    <p> <input type = 'text' id = 'inputTitleA' placeholder="Título"/> </p>
+                    <p> <textarea id = 'inputSynopsisA' placeholder="Sinopse"></textarea> </p>
+                    <p> <textarea id = 'inputDirectorA' placeholder="Direção"></textarea> </p>
+                    <p> <textarea id = 'inputMainCastA' placeholder="Elenco"></textarea> </p>
+                    <p> <input type ='text' id = 'inputYearA' placeholder="Ano"> </p>
+                    <p> <input type = 'text' id = 'inputSeasonsA' placeholder="Temporadas"> </p>
+                    <p> <input type = 'text' id = 'inputGenreA' placeholder="Gênero"> </p>
+                    <p> <input type = 'text' id = 'inputStreamingA' placeholder="Streaming"> </p>
+                    <p> <input type = 'text' id = 'inputRatingA' placeholder="Rating"> </p>
+                    <p> <textarea id = 'inputAwardsA' placeholder="Prêmios"></textarea> </p>
+                    <p> <button type = 'submit' id = 'inputCriar' onclick = "createSerie()"> Enviar </button> </p>
+                </fieldset>
+            </form>
+        </div>
+        <section id='gallery'> </section>
+    </body>  
+</html>
